@@ -36,9 +36,7 @@ Sub A(r) '血浆1
         Set RA = Range("D1048576").End(3)
         If RA = 81 Then
             RA.Offset(1, 0) = 1
-            RA.Offset(1, -1) = "SSXJ" & Format((Mid(RA.Offset(0, -1), 5, 3) * 1) + 1, 
-
-"000") & "-A"
+            RA.Offset(1, -1) = "SSXJ" & Format((Mid(RA.Offset(0, -1), 5, 3) * 1) + 1, "000") & "-A"
         Else
             RA.Offset(1, 0) = RA + 1
             RA.Offset(1, -1) = RA.Offset(0, -1)
@@ -54,9 +52,7 @@ Sub B(r) '血浆2
         Set RA = Range("f1048576").End(3)
         If RA = 81 Then
             RA.Offset(1, 0) = 1
-            RA.Offset(1, -1) = "SSXJ" & Format((Mid(RA.Offset(0, -1), 5, 3) * 1) + 1, 
-
-"000") & "-B"
+            RA.Offset(1, -1) = "SSXJ" & Format((Mid(RA.Offset(0, -1), 5, 3) * 1) + 1, "000") & "-B"
         Else
             RA.Offset(1, 0) = RA + 1
             RA.Offset(1, -1) = RA.Offset(0, -1)
@@ -73,9 +69,7 @@ Sub C(r) '白细胞+Trizl
         Set RA = Range("h1048576").End(3)
         If RA = 81 Then
             RA.Offset(1, 0) = 1
-            RA.Offset(1, -1) = "SSXB-TRIZOL-" & Format((Mid(RA.Offset(0, -1), 13, 3) * 
-
-1) + 1, "000") & "-C"
+            RA.Offset(1, -1) = "SSXB-TRIZOL-" & Format((Mid(RA.Offset(0, -1), 13, 3) * 1) + 1, "000") & "-C"
         Else
             RA.Offset(1, 0) = RA + 1
             RA.Offset(1, -1) = RA.Offset(0, -1)
@@ -89,9 +83,7 @@ Sub D(r) '白细胞
         Set RA = Range("j1048576").End(3)
         If RA = 81 Then
             RA.Offset(1, 0) = 1
-            RA.Offset(1, -1) = "SSXB" & Format((Mid(RA.Offset(0, -1), 5, 3) * 1) + 1, 
-
-"000") & "-D"
+            RA.Offset(1, -1) = "SSXB" & Format((Mid(RA.Offset(0, -1), 5, 3) * 1) + 1, "000") & "-D"
         Else
             RA.Offset(1, 0) = RA + 1
             RA.Offset(1, -1) = RA.Offset(0, -1)
@@ -105,9 +97,7 @@ Sub E(r) '红细胞
         Set RA = Range("l1048576").End(3)
         If RA = 81 Then
             RA.Offset(1, 0) = 1
-            RA.Offset(1, -1) = "SSRBC" & Format((Mid(RA.Offset(0, -1), 6, 3) * 1) + 1, 
-
-"000") & "-E"
+            RA.Offset(1, -1) = "SSRBC" & Format((Mid(RA.Offset(0, -1), 6, 3) * 1) + 1, "000") & "-E"
         Else
             RA.Offset(1, 0) = RA + 1
             RA.Offset(1, -1) = RA.Offset(0, -1)
